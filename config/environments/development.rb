@@ -1,6 +1,16 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.generators do |g|
+    g.test_framework :rspec, fixture: true
+    g.fixture_replacement :factory_girl, dir: 'spec/factories'
+    g.view_specs false
+    g.integration_specs false
+    g.stylesheets = false
+    g.javascripts = false
+    g.helper = false
+  end
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
