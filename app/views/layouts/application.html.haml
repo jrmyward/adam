@@ -1,10 +1,31 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Adam
-    = csrf_meta_tags
+    = render 'shared/head_meta'
+    = yield(:meta)
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = yield(:head)
   %body
+    .header-hat
+      .container
+        .row
+          .col-sm-5.hidden-xs
+          .col-sm-7.text-right
+            %ul.info-list
+              %li.info-list__element.hidden-sm.hidden-xs
+                %i.fa.fa-envelope
+                Support@mail.com
+              %li.info-list__element.hidden-sm.hidden-xs
+                %i.fa.fa-phone
+                +01 1800 453 7678
+              %li.info-list__element
+                %a.info-list__link{:href => "#"}
+                  %i.fa.fa-lock
+                  Login
+              %li.info-list__element
+                %a.info-list__link{:href => "#"}
+                  %i.fa.fa-user
+                  Sign Up
+
     = yield
