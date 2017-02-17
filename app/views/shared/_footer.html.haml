@@ -1,0 +1,49 @@
+%footer.footer
+  .container
+    .row
+      .col-md-4.col-sm-6.footer__col
+        %h3.footer__title About My Backup Agent
+        %p.footer__text
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing
+          condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna
+          euismod in elementum purus molestie.
+
+      / footer col
+      .col-md-4.col-sm-6.footer__col
+        %h3.footer__title Contact
+        %ul.list-unstyled.contact
+          %li
+            %p.footer__text
+              %strong.footer__text--label
+                %i.fa.fa-map-marker
+                Address:
+              vaisahali, jaipur, 302012
+          %li
+            %p.footer__text
+              %strong.footer__text--label
+                %i.fa.fa-envelope
+                Mail Us:
+              %a.footer__text--link{:href => "#"} Support@designmylife.com
+          %li
+            %p.footer__text
+              %strong.footer__text--label
+                %i.fa.fa-phone
+                Phone:
+              +91 1800 2345 2132
+          %li
+            %p.footer__text
+              %strong.footer__text--label
+                %i.fa.fa-print
+                Fax
+              1800 2345 2132
+          %li
+            %p.footer__text
+              %strong.footer__text--label
+                %i.fa.fa-skype
+                Skype
+              assan.856
+    .row
+      .col-md-12.text-center
+        .footer--bottom
+          %span.footer__text
+            = render 'shared/copyright_notice'
