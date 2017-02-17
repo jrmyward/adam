@@ -1,0 +1,57 @@
+.navbar.navbar-default.navbar-static-top.a-navbar.yamm.sticky{role: 'navigation'}
+  .container
+    .navbar-header
+      %button.navbar-toggle{'data-target' => '.navbar-collapse', 'data-toggle' => 'collapse', type: 'button'}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to root_path, class: 'navbar-brand' do
+        = image_tag 'fpo/logo.png', alt: 'FPO Logo'
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.dropdown-toggle{'data-toggle' => 'dropdown', href: '#'}
+            Sample
+        %li.dropdown.active
+          %a.dropdown-toggle{'data-toggle' => 'dropdown', href: '#'}
+            Home
+            %i.fa.fa-angle-down
+          %ul.dropdown-menu.multi-level{'aria-labelledby' => 'dropdownMenu', role: 'menu'}
+            %li.dropdown-submenu
+              %a{href: '#', :tabindex => '-1'} Sliders
+              %ul.dropdown-menu
+                %li
+                  %a{href: 'index.html'} Revolution Full-width
+                %li
+                  %a{href: 'home-revolution-boxed.html'} Revolution Boxed
+                %li
+                  %a{href: 'home-revolution-fullscreen.html'} Revolution Fullscreen
+                %li
+                  %a{href: 'ken-burns.html'} Ken burns Slider
+                %li
+                  %a{href: 'home-carousel.html'} Carousel Slider
+                %li
+                  %a{href: 'home-flexslider.html'} Flex slider
+            %li.dropdown-submenu
+              %a{href: '#', :tabindex => '-1'} Revolution 5
+              %ul.dropdown-menu
+                %li
+                  %a{href: 'r5-classic.html'} Carousel classic
+                %li
+                  %a{href: 'r5-gym.html'} Slider Gym
+        / menu home li end here
+        %li.dropdown
+          %a.dropdown-toggle{'data-toggle' => 'dropdown', href: '#'}
+            Portfolio
+            %i.fa.fa-angle-down
+          %ul.dropdown-menu.multi-level{role: 'menu'}
+            %li.dropdown-submenu
+              %a{href: '#', :tabindex => '-1'} Cube Portfolio
+              %ul.dropdown-menu
+                %li
+                  %a{href: 'juicy-portfolio.html'} Juicy Projects
+                %li
+                  %a{href: 'cube-fullwidth.html'} Full Width
+                %li
+                  %a{href: 'cube-masonry.html'} Masonry
