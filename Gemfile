@@ -40,8 +40,11 @@ gem 'redis', '~> 3.0'
 # tools
 gem 'awesome_print'
 gem 'pry-rails'
+gem 'thor', '0.19.1'
 
 # views
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-rails'
 gem 'haml'
 gem 'haml-rails'
 
@@ -56,9 +59,13 @@ group :development, :test do
 end
 
 group :development do
+  gem 'guard', require: false
+  gem 'guard-livereload', require: false
   # Access an IRB console on exception pages or by using
   # <%= console %> anywhere in the code.
   gem 'listen', '~> 3.0.5'
+  gem 'rack-livereload'
+  gem 'rb-fsevent'
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
