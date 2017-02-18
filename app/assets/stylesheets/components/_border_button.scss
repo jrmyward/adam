@@ -1,0 +1,38 @@
+.border-button {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.border-button--black {
+  border-color: $gray-dark;
+  color: $gray-base;
+}
+
+.border-button--black:hover {
+  background-color: $gray-base;
+  border-color: $gray-base;
+  color: #fff;
+}
+
+.border-button--danger {
+  border-color: $brand-danger;
+  color: $brand-danger;
+}
+
+.border-button--danger:hover{
+  background-color: $brand-danger;
+  border-color: $brand-danger;
+  color: #fff;
+}
+
+.border-button--white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.border-button--white:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: $gray-base;
+}
