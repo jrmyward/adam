@@ -1,0 +1,28 @@
+.brick {
+  padding: 40px 0;
+}
+
+.brick__text {
+  color: #999;
+  font-size: $font-size-large;
+  font-weight: 400;
+}
+
+.brick__title {
+  font-family: $font-family-sans-serif-secondary;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  margin: 0 0 14px 0;
+  text-transform: uppercase;
+
+}
+
+.brick--dark {
+  @extend .brick;
+  background-color: lighten($gray-base, 7%);
+
+  .brick__title {
+    color: #fff;
+  }
+}

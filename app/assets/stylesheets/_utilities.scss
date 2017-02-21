@@ -1,0 +1,18 @@
+/* Same height columns */
+
+.row-same-height {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+
+.col-middle {
+  vertical-align: middle;
+}
