@@ -1,0 +1,42 @@
+.page {}
+
+.page__row {
+  padding: 20px 0;
+}
+
+.page__row--alt {
+  background-color: $gray-lighter;
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+}
+
+.page__row--vertical {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page__center-line {
+  border-top: 1px solid darken($gray-lighter, 10%);
+  display: block;
+  height: 1px;
+  margin: 20px auto;
+  width: 70px;
+  text-align: center;
+}
+
+.page__text {
+  color: $gray;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.page__title {
+  color: $gray-base;
+  font-family: $font-family-sans-serif-secondary;
+  font-size: $font-size-h2;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}

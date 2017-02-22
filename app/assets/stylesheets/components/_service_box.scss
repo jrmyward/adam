@@ -1,0 +1,41 @@
+.service-box {
+  margin-bottom: 30px;
+}
+
+.service-box__body {
+  margin-left: 65px;
+}
+
+.service-box__cta {
+  color: $brand-danger;
+
+  .service-box__cta-icon {
+    margin-left: 5px;
+  }
+}
+
+.service-box__icon-container {
+  @include transition (all 0.3s ease-out);
+
+  float: left;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 3px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.service-box__icon {
+  color: $brand-danger;
+  font-size: 50px;
+}
+
+.service-box__title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
