@@ -14,6 +14,7 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap
+//= require lib/jquery.sticky
 //= require lib/typed
 //= require public
 //= require turbolinks

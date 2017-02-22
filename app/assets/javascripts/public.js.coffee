@@ -1,11 +1,9 @@
 jQuery ->
-  # $(window).load ->
-  #   $('.sticky').sticky topSpacing: 0
-  #   return
+  $('.sticky').sticky
+    topSpacing: 0
 
   $('.navbar-nav > .dropdown').hover ->
     $(this).toggleClass 'open'
-    return
 
   if $('.hero__text--typed')
     $('.hero__text--typed').each ->
@@ -14,4 +12,3 @@ jQuery ->
         strings: $this.attr('data-elements').split(',')
         typeSpeed: 100
         backDelay: 3000
-      return
