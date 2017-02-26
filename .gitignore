@@ -5,28 +5,29 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+.bundle
 
 # Ignore Byebug command history file.
 .byebug_history
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+db/*.sqlite3
+db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
+log/*.log
+tmp
 
 # Other
-/brakeman.html
-/config/database.yml
-/config/secrets.yml
-/config/sidekiq.yml
-/coverage/*
-/coverage.data/
-/doc/
-log/*.log
+brakeman.html
+config/cable.yml
+config/database.yml
+config/puma.rb
+config/secrets.yml
+config/sidekiq.yml
+coverage/*
+coverage.data/
+doc/
 *.swp
 *~
 .idea
